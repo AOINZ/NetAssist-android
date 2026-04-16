@@ -21,8 +21,7 @@
 
 ### 直接安装 APK
 
-- Debug：`app/build/outputs/apk/debug/app-debug.apk`
-- Release：`app/build/outputs/apk/release/app-release.apk`
+- Release 下载包：`releases/网络调试助手_v1.1.0_release.apk`
 
 ### 本地构建
 
