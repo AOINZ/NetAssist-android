@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- 网络设置区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/card_background"
+        android:elevation="2dp"
+        android:padding="16dp"
+        android:layout_margin="8dp">
+
+        <!-- 协议选择 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="协议类型"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp"
+                android:layout_marginEnd="12dp" />
+
+            <Spinner
+                android:id="@+id/spinner_protocol"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_field"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- IP地址 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP地址"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp"
+                android:layout_marginEnd="12dp" />
+
+            <EditText
+                android:id="@+id/et_host"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_field"
+                android:hint="192.168.5.59"
+                android:inputType="text"
+                android:text="192.168.5.59"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp" />
+
+            <ImageButton
+                android:id="@+id/btn_ip_selector"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/bg_button_primary"
+                android:src="@android:drawable/arrow_down_float"
+                android:tint="@color/white"
+                android:contentDescription="选择IP"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <!-- 端口和连接按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="端口"
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp"
+                android:layout_marginEnd="12dp" />
+
+            <EditText
+                android:id="@+id/et_port"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_field"
+                android:hint="6000"
+                android:inputType="number"
+                android:text="6000"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:padding="12dp"
+                android:layout_marginEnd="12dp" />
+
+            <Button
+                android:id="@+id/btn_connect"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:text="连接"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_primary"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 数据显示区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:background="@color/card_background"
+        android:elevation="2dp">
+
+        <!-- 接收区标题栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#FFF1F5F9"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="接收区"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/cb_auto_scroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动滚屏"
+                android:textSize="12sp"
+                android:checked="true" />
+
+            <CheckBox
+                android:id="@+id/cb_show_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日志模式"
+                android:textSize="12sp"
+                android:checked="true"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="清空"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:background="@android:color/transparent"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textAllCaps="false"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- 快捷指令按钮区域 -->
+        <HorizontalScrollView
+            android:id="@+id/hsv_quick_commands"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_quick_buttons_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp" />
+        </HorizontalScrollView>
+
+        <!-- 接收数据显示 -->
+        <ScrollView
+            android:id="@+id/sv_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:textColor="@color/text_primary"
+                android:textSize="13sp"
+                android:lineSpacingExtra="2dp" />
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- 发送区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:background="@color/card_background"
+        android:elevation="2dp"
+        android:padding="12dp">
+
+        <!-- 发送区标题栏 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="发送区"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg_data_format"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_ascii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASCII"
+                    android:textSize="12sp"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_hex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HEX"
+                    android:textSize="12sp"
+                    android:layout_marginStart="8dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 发送输入框和按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/et_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="输入要发送的数据"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="top|start" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="发送"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_success"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+.gradle/
+.idea/
+.arts/
+.codeartsdoer/
+app/build/
+build/
+local.properties
+*.iml
+
+# Signing and local secrets
+*.jks
+*.keystore
+keystore.properties
+签名信息说明.md
+
+# Private documents
+自助登机人脸接口2.0.docx
+
+# OS files
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">网络调试助手</string>
+    <string name="app_author">作者：AOINZ</string>
+    <string name="app_copyright">Copyright © 2026 AOINZ. All rights reserved.</string>
+    <string name="app_version">版本：v1.1.0</string>
+    <string name="app_description">面向 TCP / UDP 调试场景的安卓网络调试工具，适合联调、连通性验证和报文收发测试。</string>
+
+    <string name="network_settings">网络设置</string>
+    <string name="protocol_type">协议类型</string>
+    <string name="remote_host">远程主机地址</string>
+    <string name="remote_port">远程主机端口</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开</string>
+    <string name="receive_settings">接收设置</string>
+    <string name="data_log">数据日志</string>
+    <string name="send_data">发送数据</string>
+    <string name="clear_receive">清空接收</string>
+    <string name="auto_scroll">自动滚屏</string>
+    <string name="quick_commands">快捷指令</string>
+    <string name="tcp_client">TCP Client</string>
+    <string name="tcp_server">TCP Server</string>
+    <string name="udp">UDP</string>
+
+    <string name="about_title">关于应用</string>
+    <string name="github_title">GitHub</string>
+    <string name="github_description">项目主页与作者开源主页入口。</string>
+    <string name="github_label">GitHub 地址</string>
+    <string name="github_url">https://github.com/AOINZ</string>
+    <string name="open_github">打开 GitHub</string>
+    <string name="copy_github">复制 GitHub 地址</string>
+    <string name="copy_success">GitHub 地址已复制</string>
+    <string name="copy_failed">复制失败，请稍后再试</string>
+    <string name="no_browser_found">未找到可用浏览器</string>
+</resources>

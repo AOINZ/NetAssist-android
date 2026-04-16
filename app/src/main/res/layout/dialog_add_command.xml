@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新建快捷指令"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指令名称"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_command_name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_input_field"
+        android:hint="例如: 测试指令"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_hint"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指令内容"
+        android:textColor="@color/text_secondary"
+        android:textSize="15sp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/et_command_data"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_input_field"
+        android:hint="例如: Hello World"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_hint"
+        android:layout_marginBottom="24dp"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:background="@android:color/transparent"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="保存"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_primary"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design 配色方案 -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- 主色调 - 简约灰色系 -->
+    <color name="primary">#FF6366F1</color>
+    <color name="primary_dark">#FF4F46E5</color>
+    <color name="primary_light">#FFF1F5F9</color>
+    <color name="accent">#FF8B5CF6</color>
+    
+    <!-- 背景色 -->
+    <color name="background">#FFF8FAFC</color>
+    <color name="card_background">#FFFFFFFF</color>
+    
+    <!-- 文字颜色 -->
+    <color name="text_primary">#FF1E293B</color>
+    <color name="text_secondary">#FF64748B</color>
+    <color name="text_hint">#FF94A3B8</color>
+    
+    <!-- 状态颜色 -->
+    <color name="success">#FF10B981</color>
+    <color name="error">#FFEF4444</color>
+    <color name="warning">#FFF59E0B</color>
+    <color name="info">#FF3B82F6</color>
+    
+    <!-- 数据流颜色 -->
+    <color name="recv_text">#FF0EA5E9</color>
+    <color name="send_text">#FF10B981</color>
+    
+    <!-- 边框和分割线 -->
+    <color name="divider">#FFE2E8F0</color>
+    <color name="border">#FFE2E8F0</color>
+    
+    <!-- 按钮颜色 -->
+    <color name="button_primary">#FF6366F1</color>
+    <color name="button_success">#FF10B981</color>
+    <color name="button_danger">#FFEF4444</color>
+    <color name="button_text">#FFFFFFFF</color>
+</resources>
