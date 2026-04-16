@@ -11,13 +11,10 @@
 
 ## 界面预览
 
-### 主界面
-
-![主界面](images/Screenshot_2026-04-14-15-38-48-119_com.example.netassist.jpg)
-
-### 设置页
-
-![设置页](images/Screenshot_2026-04-14-15-38-53-022_com.example.netassist.jpg)
+<p align="center">
+  <img src="images/Screenshot_2026-04-14-15-38-48-119_com.example.netassist.jpg" alt="主界面" width="32%" />
+  <img src="images/Screenshot_2026-04-14-15-38-53-022_com.example.netassist.jpg" alt="设置页" width="32%" />
+</p>
 
 ## 快速开始
 
