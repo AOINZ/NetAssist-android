@@ -21,7 +21,7 @@
 
 ### 直接安装 APK
 
-- Release 下载包：`releases/网络调试助手_v1.1.0_release.apk`
+- [点击下载 Release APK](releases/%E7%BD%91%E7%BB%9C%E8%B0%83%E8%AF%95%E5%8A%A9%E6%89%8B_v1.1.0_release.apk)
 
 ### 本地构建
 
