@@ -13,6 +13,7 @@
 
 <p align="center">
   <img src="images/Screenshot_2026-04-14-15-38-48-119_com.example.netassist.jpg" alt="主界面" width="32%" />
+  <img src="images/Screenshot_2026-04-16-11-37-53-457_com.example.netassist.jpg" alt="快捷指令页" width="32%" />
   <img src="images/Screenshot_2026-04-14-15-38-53-022_com.example.netassist.jpg" alt="设置页" width="32%" />
 </p>
 
